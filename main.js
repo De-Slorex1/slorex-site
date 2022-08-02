@@ -10,6 +10,18 @@ window.addEventListener("scroll", () => {
     }
 });
 
+window.addEventListener("scroll", () => {
+    let activePage = document.querySelector(".feature-bg");
+    let activecontainer = activePage.getBoundingClientRect().top;
+    let ActivePosition = Window.innerHeight;
+    if(activecontainer < ActivePosition) {
+        activePage.classList.add("anime");
+    }
+    else {
+        activePage.classList.remove("anime");
+    }
+})
+
 var noti = document.getElementById("num");
     var select = document.querySelector(".select");
     var button = document.querySelectorAll("#button");
@@ -39,7 +51,6 @@ toggleBtn.addEventListener("click", () =>{
     }
     nav.classList.toggle("showsidebar");
 })
-
 
 const btnContainer = document.getElementById("navbar");
 const links = btnContainer.getElementsByClassName("links");

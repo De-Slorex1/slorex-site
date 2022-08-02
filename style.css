@@ -168,6 +168,25 @@ nav ul li a:hover{
     width: 440px;
     height: 280px;
 }
+.anime{
+    transition: all linear .3s;
+    animation: anime .3s linear 0s infinite;
+}
+
+@keyframes anime{
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(100px);
+        opacity: 1;
+    }
+}
 .feature-bg{
     width: 100%;
     margin: 0px;
@@ -196,8 +215,8 @@ nav ul li a:hover{
 
 .icons i{
     margin-left: 33%;
-    font-size: 25px;
-    padding: 15px 16px;
+    font-size: 23px;
+    padding: 15px;
     border-radius: 50%;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.692);
 }
@@ -296,9 +315,10 @@ nav ul li a:hover{
     font-style: italic;
 }
 .image-gallery{
-    margin: 40px 0px;
+    margin: 40px 50px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .image-container{
     margin: 20px;
@@ -378,6 +398,7 @@ nav ul li a:hover{
     font-weight: 100;
     font-family: sans-serif;
     color: gray;
+    font-size: 15px;
 }
 
 .contact-form{
@@ -1085,7 +1106,7 @@ footer .pos{
         font-family: sans-serif;
     }
     .about-laptop{
-        margin: 0px 30px;
+        margin: 0px 15px;
         padding-top: 50px;
         display: block;
     }
@@ -1100,15 +1121,16 @@ footer .pos{
         text-align: center;
     }
     .about_laptop-content{
-        margin: 0px 20px;
+        margin: 0px 8px;
         padding-top: 20px;
         line-height: 25px;
     }
     .about_laptop-content p{
         font-family: sans-serif;
-        font-weight: 100;
+        font-weight: 600;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
+        color: grey;
     }
     .about_laptop-content h1{
         margin: 30px 0px;
@@ -1119,13 +1141,16 @@ footer .pos{
     }
     .about-laptop_content p{
         font-family: sans-serif;
-        font-weight: 100;
+        font-weight: 600;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
+        color: grey;
     }
     .copy{
         margin: 30px 0px;
         text-align: center;
+        color: grey;
+        font-size: 14px;
     }
     .product-section{
         padding: 0px 25px;
