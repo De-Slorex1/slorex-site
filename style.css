@@ -22,7 +22,7 @@ body{
 
 header{
     width: 100%;
-    height: 760px;
+    height: 770px;
     background-image: url(images/header_shape.png);
     background-size: contain;
     background-position: 645px;
@@ -39,7 +39,7 @@ header{
 }
 
 .container .brand-name{
-    margin-left: 80px;
+    margin-left: 50px;
     font-family: 'Potta One', cursive;
     font-size: 30px;
     font-weight: 700;
@@ -50,7 +50,7 @@ header{
 }
 
 .cart i{
-    margin-right: 80px;
+    margin-right: 50px;
     font-size: 30px;
     cursor: pointer;
     position: relative;
@@ -60,7 +60,7 @@ header{
     content: attr(data-count);
     position: absolute;
     color: white;
-    right: 80px;
+    right: 50px;
     font-size: 13px;
     text-align: center;
     top: 20px;
@@ -112,7 +112,7 @@ nav ul li a:hover{
     transition: 1s ease-out;
 }
 .content-Container{
-    padding: 100px 80px;
+    padding: 100px 50px;
 }
 .toggle i{
     display: none;
@@ -165,25 +165,21 @@ nav ul li a:hover{
 }
 .img-one{
     margin-right: 20px;
-    width: 440px;
-    height: 280px;
+    width: 400px;
+    height: 260px;
 }
 .anime{
     transition: all linear .3s;
-    animation: anime .3s linear 0s infinite;
+    animation: anime 5s linear 2s infinite;
 }
 
 @keyframes anime{
     0% {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    50%{
-        transform: translateY(50px);
-        opacity: 0;
+        transform: translateX(0px);
+        opacity: 1;
     }
     100%{
-        transform: translateY(100px);
+        transform: translateX(-100px);
         opacity: 1;
     }
 }
@@ -207,14 +203,15 @@ nav ul li a:hover{
 }
 
 .flex-icons{
-    margin: 20px 100px;
+    margin: 20px 55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .icons i{
-    margin-left: 33%;
+    margin-left: 30px;
+    text-align: center;
     font-size: 23px;
     padding: 15px;
     border-radius: 50%;
@@ -226,8 +223,7 @@ nav ul li a:hover{
 }
 
 .icons h2{
-    padding: 15px;
-    text-align: center;
+    padding: 15px 0px;
     font-size: 1.5rem;
 }
 
@@ -235,6 +231,8 @@ nav ul li a:hover{
     color: grey;
     font-weight: 300;
     font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
 }
 .about-page{
     width: 100%;
@@ -247,7 +245,7 @@ nav ul li a:hover{
 }
 
 .flex-about{
-    padding: 80px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -271,7 +269,7 @@ nav ul li a:hover{
 .about-content p{
     margin-bottom: 40px;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 500;
     font-family: sans-serif;
     line-height: 25px;
     word-spacing: 10px;
@@ -296,7 +294,7 @@ nav ul li a:hover{
     margin: 10px 0px;
 }
 .product-container{
-    margin: 20px 50px;
+    margin: 20px 20px;
 }
 .prod-content{
     text-align: center;
@@ -315,7 +313,7 @@ nav ul li a:hover{
     font-style: italic;
 }
 .image-gallery{
-    margin: 40px 50px;
+    margin: 40px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -395,10 +393,10 @@ nav ul li a:hover{
 .contact-content p{
     margin: 10px 0px;
     line-height: 20px;
-    font-weight: 100;
+    font-weight: 500;
     font-family: sans-serif;
     color: gray;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .contact-form{
@@ -845,7 +843,7 @@ footer .pos{
     .about-content p{
         margin-bottom: 40px;
         font-size: 12px;
-        font-weight: 100;
+        font-weight: 500;
         font-family: sans-serif;
         line-height: 20px;
         word-spacing: 0px;
@@ -955,7 +953,7 @@ footer .pos{
     .contact-content p{
         margin: 10px 0px;
         line-height: 20px;
-        font-weight: 100;
+        font-weight: 500;
         font-family: sans-serif;
         color: gray;
         text-align: center;
